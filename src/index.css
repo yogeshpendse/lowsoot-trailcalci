@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+  --lowsoot-orange: #ff7401;
+  --input-border: #cccccc;
+  --btn-font-color: #333333;
+}
+button {
+  cursor: pointer;
+}
+.App {
+  text-align: center;
+}
+.btn__move {
+  /* background-color: var(--lowsoot-orange); */
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-size: 2.8rem;
+  line-height: 1.15;
+  cursor: pointer;
+  /* border: none; */
+  /* color: white; */
+  font-weight: 700;
+  padding: 0.4rem 1.2rem;
+}
+.btn__remove {
+  /* box-shadow: 0 0 0 0.1rem var(--lowsoot-orange); */
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-size: 2.8rem;
+  line-height: 1.15;
+  cursor: pointer;
+  /* border: none; */
+  font-weight: 700;
+  /* background-color: white; */
+  padding: 0.4rem 1.2rem;
+}
+.btn__option {
+  border-radius: 0.6rem;
+  /* border-color: #cccccc; */
+  border-style: solid;
+  border-width: 0.2rem;
+  padding: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  /* color: #333333; */
+}
+.btn__option--select {
+  border-color: var(--lowsoot-orange);
+}
+
+.input__custom {
+  border-radius: 0.6rem;
+  /* border-color: #cccccc; */
+  border-style: solid;
+  border-width: 0.2rem;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  /* color: #333333; */
+}
+.seleopt {
+  background-color: chartreuse;
+  cursor: pointer;
+}
+.onononono {
+  cursor: pointer;
+}
