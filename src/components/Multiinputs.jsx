@@ -38,8 +38,8 @@ export function Multiinputs(params) {
   //   btn__option--select
   return (
     <>
-      <h1>--{carno}--</h1>
-      <p>What type of car is car{carno}?</p>
+      {/* <h1>--{carno}--</h1> */}
+      <p className="question__text">What type of car is car{carno}?</p>
       <div>
         <button
           className={
@@ -72,7 +72,9 @@ export function Multiinputs(params) {
           Electric
         </button>
       </div>
-      <p>How many km do you drive each week in Car {carno}?</p>
+      <p className="car__question">
+        How many km do you drive each week in Car {carno}?
+      </p>
       <input
         className="input__custom"
         value={mainitem.driveeachweek}
@@ -82,7 +84,9 @@ export function Multiinputs(params) {
       />
       {mainitem.cartype !== "electric" && (
         <>
-          <p>How many kilometers per liter does Car {carno} get?</p>
+          <p className="car__question">
+            How many kilometers per liter does Car {carno} get?
+          </p>
           <input
             className="input__custom"
             value={mainitem.kilometersperliter}

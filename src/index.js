@@ -4,16 +4,22 @@ import App from "./App";
 import "./index.css";
 import { Getinputcontextprovider } from "./contexts/Getinputcontext";
 import { GetQuestioncontextprovider } from "./contexts/Questioncontext";
+import { BrowserRouter } from "react-router-dom";
+import { Protectionprovider } from "./contexts/Protectioncontext";
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Getinputcontextprovider>
-      <GetQuestioncontextprovider>
-        <App />
-      </GetQuestioncontextprovider>
-    </Getinputcontextprovider>
+    <Protectionprovider>
+      <BrowserRouter>
+        <Getinputcontextprovider>
+          <GetQuestioncontextprovider>
+            <App />
+          </GetQuestioncontextprovider>
+        </Getinputcontextprovider>
+      </BrowserRouter>
+    </Protectionprovider>
   </React.StrictMode>
 );
 
